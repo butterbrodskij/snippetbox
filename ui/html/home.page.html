@@ -1,0 +1,18 @@
+{{template "base" .}}
+
+{{define "title"}}Home page{{end}}
+
+{{define "main"}}
+<h2>Latest notes</h2>
+<table>
+    <thead><th>Id</th><th>Title</th><th>Created</th><th>Expires</th></thead>
+    {{range .}}
+    <tr>
+        <td>{{.Id}}</td>
+        <td><a href='/snippet?id={{.Id}}'>{{.Title}}</a></td>
+        <td>{{.Created}}</td>
+        <td>{{.Expires}}</td>
+    </tr>
+    {{end}}
+</table>
+{{end}}

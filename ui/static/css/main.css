@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    height : 100%;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+header {
+    text-align: center;
+}
+
+body {
+    height : 100%;
+    margin: 0 auto;
+    background-color: #b0ada9;
+    padding: 0 20px 20px 20px;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 10px;
+}
+
+a {
+    color: #4b494a;
+    text-decoration: none;
+}
+
+h1 a {
+    font-size: 36px;
+    font-weight: bold;
+    height: 36px;
+    position: relative;
+    text-decoration: none;
+}
+
+nav a {
+    font-weight: bold;
+    height: 36px;
+    position: relative;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #34495E;
+}
+
+footer {
+    border-top: 1px solid #E4E5E7;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background: #F7F9FA;
+    height: 30px;
+    position: fixed;
+    width: 99%;
+    bottom: 0;
+    color: #6A6C6F;
+    text-align: center;
+}

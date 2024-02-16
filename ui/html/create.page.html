@@ -1,0 +1,12 @@
+{{template "base" .}}
+
+{{define "title"}}Create snippet{{end}}
+
+{{define "main"}}
+<form method="POST" autocomplete="off" action="/snippet/create">
+    <p><input placeholder="title" name="title"/></p>
+    <p><textarea rows="10" cols="50" name="content"></textarea>></p>
+    <p><input placeholder="date" type="number" name="days"/></p>
+    <p><input type="submit" value="Submit"/></p>
+</form>
+{{end}}
